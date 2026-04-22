@@ -393,3 +393,9 @@ Sessionx.vim
 # End of https://www.toptal.com/developers/gitignore/api/go,git,vim,tags,test,emacs,backup,jetbrains
 .idea
 dist/
+
+# Runtime test artifacts — the log package spits rotated files here and
+# load/stress tests leave .trace profiles. These can reach hundreds of MB
+# (bloating the Docker build context in dependent repos) and aren't code.
+log/
+**/*.trace
