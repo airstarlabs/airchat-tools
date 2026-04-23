@@ -28,14 +28,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/airstarlabs/airchat-tools/errs"
+	"github.com/airstarlabs/airchat-tools/s3"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	v4 "github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	awss3config "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	awss3 "github.com/aws/aws-sdk-go-v2/service/s3"
 	awss3types "github.com/aws/aws-sdk-go-v2/service/s3/types"
-	"github.com/airstarlabs/airchat-tools/errs"
-	"github.com/airstarlabs/airchat-tools/s3"
 	"github.com/qiniu/go-sdk/v7/auth"
 )
 
